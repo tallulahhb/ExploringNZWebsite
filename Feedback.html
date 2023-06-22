@@ -163,55 +163,59 @@
     </style>
 
 
-<div class="bg-image"></div>
+<div class="container">
+  <form action="action_page.php">
 
-<div class="bg-text">
-  <h1> Feedback </h1>
-  <p> Where are you going next? </p>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" >
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" >
+
+    <label for="country">Where are you planning to go? </label>
+    <select id="country" name="country">
+      <option value="">Auckland</option>
+      <option value=""> Wellington </option>
+      <option value=""> Queenstown </option>
+      <option value=""> Rotorua </option>
+      <option value=""> Taupō </option>
+      <option value=""> Aoraki/Mount Cook National Park </option>
+      <option value=""> Lake Tekapo </option>
+      <option value=""> Milford Sounds </option>
+      <option value=""> Kaikōura </option>
+      <option value=""> Wānaka </option>
+      <option value=""> Hokianga </option>
+    </select>
+
+    <label for="subject"> How did this website help you find places to visit? </label>
+    <textarea id="submit" name="submit" placeholder="" style="height:200px"></textarea>
+
+    <input type="button" value="Submit" onclick="alert ('Thanks for your Feedback!')"; style="color:#fff ;background-color:#001933; font-family: 'Courier New', Courier, monospace; padding: 1%;";> 
+  </form>
 </div>
 
-<style> 
-body, html {
-height: 100%;
+<style>
+  body {font-family: 'Courier New', Courier, monospace; background-image:url(WanakaHike.jpg); color: #001933;}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  font-family: 'Courier New', Courier, monospace;
+  padding: 12px; 
+  border: 1px solid #001933; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+  
 }
 
-* {
-box-sizing: border-box; 
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.bg-image {
-/* The image used */
-background-image: url("Snow.jpeg");
-
-/* Add the blur effect */
-filter: blur(8px);
--webkit-filter: blur(8px);
-
-/* Full height */
-height: 100%;
-
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-/* Position text in the middle of the page/image */
-.bg-text {
-background-color:#fff(0,0,0); /* Fallback color */
-background-color:#fff(0,0,0, 0.4); /* Black w/opacity/see-through */
-color: #001933;
-font-weight: bold;
-border: 3px solid #001933;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 1;
-width: 80%;
-padding: 20px;
-text-align: center;
-}
 </style>
 
 </body>
