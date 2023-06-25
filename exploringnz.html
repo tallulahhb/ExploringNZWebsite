@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lake Tekapo</title>
-    <link rel="icon" type="image/x-icon" href="LogoWhiteWriting.png" width="25" height="15">
+    <title>Exploring New Zealand </title>
+     <link rel="icon" type="image/x-icon" href="LogoWhiteWriting.png" width="25" height="15">
 
 </head>
 <body>
-    
+  
   <div class="navbar">
     <a href="exploringnz.html">  <img width="50" height="40" src="Logobutbluebackground.png" alt=""> </a>
     <div class="dropdown">
@@ -43,14 +43,26 @@
       </div>
     </div>
   </li>
+   
 
-<style>
+    
 
-body {
+    <div class="content">
+      <h1>EXPLORING NEW ZEALAND  </h1>
+      <h2> TE TOROTORO I AOTEAROA </h2>
+    </div>
+<video autoplay muted loop id="myVideo">
+    <source src="NZMOVIESCR.mov" type="video/mp4">
+  </video>
+  
+
+
+    <style> 
+    
+    body {
           margin: 0;
           font-family:'Courier New', Courier, monospace;
           font-weight: bold;
-        
         }
         
         .topnav {
@@ -79,16 +91,23 @@ body {
         a {color:#fff; font-size: x-large;} 
         nav {background-color: #001933;}
         
-        body {background-color:white;} 
 
-        /* Navbar container */
-        .navbar {
-        overflow: hidden;
-        background-color: #001933;
-        font-family:'Courier New', Courier, monospace; 
-        font-size: larger;
-        font-weight: bold;
-        }
+        h1 {color: rgb(255, 255, 255);}
+        h2 {color: rgb(255, 255, 255);}
+        h1 {color: aliceblue;}
+        body {background-color:#001933;} 
+
+            video {width: 100%;height: 100%;} 
+            .content {font-family:'Courier New', Courier, monospace;font-size: xx-large;}
+            nav {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #001933;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+}
 
 /* Links inside the navbar */
 .navbar a {
@@ -114,9 +133,9 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: 'Courier New', Courier, monospace; 
-  margin: 0; 
+  font-family:'Courier New', Courier, monospace; 
   font-weight: bold;
+  margin: 0; 
 }
 
 /* Add a red background color to navbar links on hover */
@@ -131,7 +150,7 @@ body {
   background-color: #001933;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px white (0,0,0,0.2);
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Links inside the dropdown */
@@ -162,80 +181,9 @@ body {
   width: 100%;
   padding: 20px;
             }
-</style>
+          
 
-  <div class="bg-image"></div>
-
-  <div class="bg-text">
-    <h1>Lake Tekapo</h1>
-    <p> </p>
-  </div>
-
-  <style> 
-  body, html {
-  height: 100%;
-}
-
-* {
-  box-sizing: border-box; 
-}
-
-.bg-image {
-  /* The image used */
-  background-image: url("FlowermountainsLake.jpg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color:#fff(0,0,0); /* Fallback color */
-  background-color:#fff(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: #001933;
-  font-weight: bold;
-  border: 3px solid #001933;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-  </style>
-
-<img src="LakeTekapo.jpg"; style="height: 640px; float: right; padding-right: 0.25cm; padding-top: 0.5cm;" >
-<h1> Lake Tekapo </h1> 
-<h2>  </h2>
-
-<p>
-  Lake Tekapo, known for its stunning turquoise lakes, gorgeous snow capped mountains and the Church of the Good Shepard a small stone church sitting by the lakefront. <br>
-The secluded town is located under the 'Aoraki Mackenzie International Dark Sky Reserve.' With low light pollution the sky is a wonder to go stargazing. <br>
-  Lake Tekapo, though it is a small town it is wonderful to stay in! With small alpine escapes to stay the night with views of the gorgeous lake! <br>
-  Visit the Tekapo hot springs for a dip! Take a look into space from the University of Canterbury Mt John Observatory. Lupin season, the gorgeous purple flowers  come out around mid November, a perfect photo awaits! <br>
-  Lake Tekapo is conveniently only a 1 hour drive away from the Aoraki Mt Cook National Park if your not done with those awesome views! <br>
-  Truly Lake Tekapo is a hidden gem in the centre of the south island in the beautiful Mackenzie country side! <br>
-</p>
-<img src="ChurchTekapoNightime.jpg"; height="350px";>
-<img src="FlowermountainsLake.jpg"; height="350px">
-
-<style> 
-  body {color: #001933;}
-  h1 {padding-left: 10px;}
-  h2 {padding-left: 10px; font-style: italic;}
-  p { padding-left:10px}
- </style>
+    </style>
 
 </body>
 </html>
